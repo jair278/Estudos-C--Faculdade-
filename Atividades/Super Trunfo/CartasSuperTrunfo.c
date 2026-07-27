@@ -98,7 +98,24 @@ int main() {
   printf("Densidade: A carta A01 venceu = %d\n", Comp_Densidade);
   printf("PIB per Capita: A carta A01 venceu = %d\n", Comp_PIBC);
   printf("Super Poder: A carta A01 venceu = %d\n\n", Comp_SupPoder);
-  printf("A carta vencedora e A01");
+  printf("A carta vencedora e A01\n\n");
+
+  //Inserção da estrutura de decisão para teste de comparação
+
+  printf("LOGICA DE DECISAO\n\n");
+
+  printf("Comparacao entre populacao\n\n\b");
+if (PopulacaoA01 > PopulacaoB01){
+  printf("A populacao da carta A01 (%u) e maior que a populacao da carta B01 (%u)\n\n", PopulacaoA01, PopulacaoB01);
+}  else{
+  printf("A populacao da carta B01 e maior que a populacao da carta A01\n\n");
+}
+  printf("Comparacao entre a soma de todos os atributos\n\n\b");
+if (SomaA01 > SomaB01){
+  printf("A Soma de todos os atributos da carta A01 (%.2f) e maior que a soma de todos os atributos de B01 (%.2f),\n portanto A01 e a carta vencedora!\n\n", SomaA01, SomaB01);
+} else {
+  printf("A Soma de todos os atributos da carta B01 (%.2f) e maior que a soma de todos os atributos de A01 (%.2f),\n portanto B01 e a carta vencedora!\n\n", SomaB01, SomaA01);
+}
 
   return 0;
 } 
